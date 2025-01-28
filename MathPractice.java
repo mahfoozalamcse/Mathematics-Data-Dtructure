@@ -18,6 +18,7 @@ public class MathPractice {
             temp = temp / 10;
         }
         
+        
         return (rev == x);
     }
 
