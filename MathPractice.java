@@ -57,11 +57,21 @@ public class MathPractice {
         return res;
     }
 
+    // efficient trailing zero
+    public static int trailingzerofact(int x){
+        int res = 0;
+        for(int i=5; i<=x; i*=5){
+            res = res + x/i;
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
         System.out.println(countDigit(100));
         System.out.println(pallindrome(78987));
         System.out.println(factorial(4));
         System.out.println(fact1(5));
         System.out.println(trailingFactorial(10));
+        System.out.println(trailingzerofact(10));
     }
 }
