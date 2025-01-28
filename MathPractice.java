@@ -9,7 +9,7 @@ public class MathPractice {
         }
         return count;
     }
-    // pallindrome number check
+    // pallindrome number check time O(d)
     public static boolean pallindrome(int x){
         int temp = x;
         int rev = 0;
@@ -17,13 +17,34 @@ public class MathPractice {
             rev = rev*10 + temp % 10;
             temp = temp / 10;
         }
-        
+
         
         return (rev == x);
+    }
+    // iterative factorial 
+    public static int fact1(int x){
+        int fact = 1;
+        for (int i = 2; i <= x; i++) {
+            fact = fact * i;
+        }
+        return fact;
+    }
+
+    // factorial number
+    public static int factorial(int x){
+        int fact = 1;
+        if (x  == 1) {
+            return fact;
+        }
+       
+        fact = x*factorial(x-1);
+        return fact;
     }
 
     public static void main(String[] args) {
         System.out.println(countDigit(100));
         System.out.println(pallindrome(78987));
+        System.out.println(factorial(4));
+        System.out.println(fact1(5));
     }
 }
