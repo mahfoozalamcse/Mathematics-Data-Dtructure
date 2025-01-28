@@ -32,13 +32,29 @@ public class MathPractice {
 
     // factorial number
     public static int factorial(int x){
-        int fact = 1;
-        if (x  == 1) {
-            return fact;
+        
+        if (x  == 0) {
+            return 1;
         }
        
-        fact = x*factorial(x-1);
-        return fact;
+        return x*factorial(x-1);
+        
+    }
+
+    // factorial finding of trailing Zeros eg. 10 factorial 3628800 tailing zeros is 2
+
+    public static int trailingFactorial(int x){
+       
+        int fact = 1;
+        for (int i = 2; i <= x; i++) {
+            fact = fact * i;
+        }
+        int res = 0;
+        while (fact % 10 == 0) {
+            res++;
+            fact = fact / 10;
+        }
+        return res;
     }
 
     public static void main(String[] args) {
@@ -46,5 +62,6 @@ public class MathPractice {
         System.out.println(pallindrome(78987));
         System.out.println(factorial(4));
         System.out.println(fact1(5));
+        System.out.println(trailingFactorial(10));
     }
 }
