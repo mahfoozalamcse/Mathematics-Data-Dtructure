@@ -1,4 +1,4 @@
-public class MathPractice {
+public class MathPractice { 
 
     // count digit
     public static int countDigit(int x){
