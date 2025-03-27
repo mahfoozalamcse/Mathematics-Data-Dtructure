@@ -1,7 +1,7 @@
 public class MathPractice {  
    
     // count digit 
-    public static int countDigit(int x){
+    public static int countDigit(int x){ 
         int count  = 0;  
         while (x > 0) {
            x  =  x / 10; 
