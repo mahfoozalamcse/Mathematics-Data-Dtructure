@@ -1,4 +1,4 @@
-public class MathPart2 {  
+public class MathPart2 {   
  
     // Neive method gcd 
     public static int gcd(int a, int b){
