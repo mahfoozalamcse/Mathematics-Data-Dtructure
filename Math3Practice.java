@@ -41,10 +41,23 @@ public class Math3Practice {
     }
 
 
+    // trailing zero eg 8 fact = 40320  at the end 1
+    public static int trailing(int x){
+        int trail = fact2(x);
+        int res = 0;
+        while (trail % 10 == 0) {
+            res++;
+            trail = trail / 10;
+        }
+        return res;
+    }
+
+
     public static void main(String[] args) {
 
       System.out.println(palindrome(78987));  
       System.out.println(factorial(4));
       System.out.println(fact2(4));
+      System.out.println(trailing(5));
     }
 }
