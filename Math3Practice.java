@@ -68,6 +68,23 @@ public class Math3Practice {
         return (a*b)/gcd(a, b);
     }
 
+
+    // prime factor
+    public static boolean prime(int x){
+        if (x  == 2) {
+            return true;
+        }
+        while (x > 2) {
+            if (x % 10 != 0) {
+                return true;
+            }else{
+                return false;
+            }
+        }
+            
+        return false;
+    }
+
     public static void main(String[] args) {
 
       System.out.println(palindrome(78987));  
@@ -76,5 +93,6 @@ public class Math3Practice {
       System.out.println(trailing(5));
       System.out.println(gcd(12, 15));
       System.out.println(lcm(4, 6));
+      System.out.println(prime(30));
     }
 }
