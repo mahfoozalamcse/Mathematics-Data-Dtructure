@@ -14,10 +14,20 @@ public class Math3Practice {
 
 
     // factorial findinding
-    
+    public static int factorial(int x){
+        if (x  < 0) {
+            return -1;
+        }
+        if (x == 0) {
+            return 1;
+        }
+        return x*factorial(x-1);
+    }
+
 
     public static void main(String[] args) {
 
       System.out.println(palindrome(78987));  
+      System.out.println(factorial(4));
     }
 }
