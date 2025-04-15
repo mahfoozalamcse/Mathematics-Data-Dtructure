@@ -52,6 +52,21 @@ public class Math3Practice {
         return res;
     }
 
+    // GCD 
+    public static int gcd(int x, int y){
+        while (x != y) {
+            if (x > y) {
+                x = x - y;
+            }else{
+                y = y - x;
+            }
+        }
+        return x;
+    }
+
+    public static int lcm(int a, int b){
+        return (a*b)/gcd(a, b);
+    }
 
     public static void main(String[] args) {
 
@@ -59,5 +74,7 @@ public class Math3Practice {
       System.out.println(factorial(4));
       System.out.println(fact2(4));
       System.out.println(trailing(5));
+      System.out.println(gcd(12, 15));
+      System.out.println(lcm(4, 6));
     }
 }
