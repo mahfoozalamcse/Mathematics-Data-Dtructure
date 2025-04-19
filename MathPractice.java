@@ -6,7 +6,7 @@ public class MathPractice {
         while (x > 0) {
            x  =  x / 10; 
            count++; 
-        }
+        } 
         return count;
     }
     // pallindrome number check time O(d) 
