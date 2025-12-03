@@ -16,6 +16,7 @@ public class MathPart2 {
             a = temp;
         }
         return a;
+      
     }
 
     // gcd 3 way solution
