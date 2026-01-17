@@ -8,6 +8,7 @@ public class MathPractice {
            count++; 
         } 
         return count;
+       
     }
     // pallindrome number check time O(d) 
     public static boolean pallindrome(int x){ 
