@@ -7,9 +7,9 @@ public class MathPart2 {
         }
         return gcd(b, a % b);
     }
-
     // efficient solution
     public static int gcd2(int a, int b){
+      
         while (b != 0) {
             int temp = b;
             b = a % b;
